@@ -1,0 +1,296 @@
+@font-face {
+	font-family: PlayfairDisplay-Bold;
+	src: url('font/Playfair_Display/PlayfairDisplay-Bold.ttf');
+}
+@font-face {
+	font-family: PlayfairDisplay-Regular;
+	src: url('font/Playfair_Display/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+	font-family: PlayfairDisplay-Italic;
+	src: url('font/Playfair_Display/PlayfairDisplay-Italic.ttf');
+}
+@font-face {
+	font-family: Ubuntu-Regular;
+	src: url('font/Ubuntu/Ubuntu-Regular.ttf');
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+    position: relative;
+    color: #626262;
+    min-width: 1062px;
+}
+
+    /*CONTAINER*/
+.container {
+    margin: 0 auto;
+    max-width: 1062px;
+}
+    /*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.header__link {
+    margin-left: 130px;
+    font-size: 14px;
+    color: #626262; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Ubuntu-Regular;
+}
+.header__logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Ubuntu-Regular;
+}
+    /*SLIDER*/
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+}
+.slider-carusel{
+    display: flex;
+}
+    /*CONTENT*/
+.content {
+    width: 100%;
+    margin-top: 100px;
+}
+.content-container {
+    display: flex;
+    justify-content: flex-end;
+}
+    /*CONTENT MAIN*/
+.content__main{
+    flex-basis: 660px;
+}
+.content__main .italic{
+    font-family: PlayfairDisplay-Italic;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #626262;
+    margin: 20px 20px;
+}
+.content__main p {
+    font-family: PlayfairDisplay-Regular;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #626262;
+    margin-top: 40px
+}
+.content__main .title{
+    font-size: 30px;
+    color: #626262;
+    margin-top: 30px;
+    font-family: Ubuntu-Regular;
+}
+.content__main .social {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+    /*CONTENT STIKY*/
+.content__stiky {
+    font-family: Ubuntu-Regular;
+    margin-left: 50px;
+    flex-basis: 284px;
+    height:max-content;
+    position: sticky;
+    top: 0;
+}
+
+.about-my h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-family: Ubuntu-Regular;
+    
+}
+.about-my p {
+    margin-top: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 64px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 25px;
+}
+
+.social div {
+    margin-right:  15px;
+}
+.social img{
+    margin-right: 15px;
+}
+.topPosts {
+    margin-top: 60px;
+}
+.subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #b4ad9e;
+}
+.topPosts__list {
+    font-size: 16px;
+    font-family: PlayfairDisplay-Bold;
+    line-height: 10px;
+}
+.topPosts__item {
+    margin-top: 30px;
+    
+}
+.topPosts__item p {
+    font-size: 12px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    margin-left: 25px;
+    color: #b4ad9e;
+}
+.topPosts > img {
+    margin-top: 30px;
+}
+    /*You may also like*/
+.mayLike {
+    background-color: #F5F5F5;
+    height: 435px;
+    margin-top: 115px;
+    padding-top: 70px;
+}
+.mayLike .title{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #626262; 
+    font-family: PlayfairDisplay-Regular;
+}
+.mayLike__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+    /*COMMENTS*/
+.coments .subtitle {
+    margin-top: 65px;
+}
+.coments__name {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 14px;
+    width: 100%;
+    color:#626262;
+}
+.coments__body{
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    margin-top: 5px;
+    color:#626262;
+}
+.coments__item {
+    display: flex;
+    margin-top: 40px;
+}
+.reply {
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: Ubuntu-Regular;
+    text-transform: uppercase;
+    color:#b4ad9e;
+}
+.coments__block{
+    margin-left: 40px;
+    width: 100%;
+}
+.coment__input {
+    height: 70px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #c8c8c8;
+    padding-left: 40px;
+}
+.coment__input::placeholder {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c8c8c8;
+}
+.coments__list .social div {
+    margin-right: 40px;
+}
+.coments__list .social {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    font-family: Ubuntu-Regular;
+}
+    /*FOOTER*/
+.footer .social {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 600;
+    margin-top: 40px;
+    font-family: PlayfairDisplay-Regular;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #F0F0F0;
+    margin-top: 40px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 40px;
+}
+.footer__info div {
+    margin: 0 20px;
+    font-weight: 600;
+    font-family: PlayfairDisplay-Regular;
+}
+    /*****************/
+.coments__img {
+    position: relative;
+}
+.coments__img.viewLeater::after {
+    content: "JD";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    font-size: 40px;
+    color:#fff;
+    font-family: Ubuntu-Regular;
+}
+@media (max-width: 1062px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1032px;
+    }
+}

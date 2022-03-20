@@ -1,0 +1,12 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+}
+.content__main{
+    flex-basis: 900px;
+    justify-content: center;
+}
+.content__main > img{
+    width: 100%;
+}
+
